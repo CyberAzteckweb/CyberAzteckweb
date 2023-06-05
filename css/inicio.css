@@ -261,15 +261,13 @@ width: 100%;
 .imgnos img {
    width: 100%;
    height: 100%;
-   border-radius: 5%;
-    
+   border-radius: 15px;
 }
 
-.imgnos > img{
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8407738095238095) 0%, rgba(0,0,0,0) 100%);
-   
-}
+
+
+
+
 
 
 .imgnos{
@@ -293,8 +291,9 @@ z-index: 5;
     z-index: 6;
     opacity: 0;
     transition: all 2s;
-  
+      
 }
+
 
 .tarjeta p {
     color: var(--white);
@@ -317,7 +316,19 @@ z-index: 5;
     
 
 
-/***********************************personal************************************/
+/***********************************servicios************************************/
+.seccion-servicios{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+.servicios{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+
+}
+
 /***********************************redes sociales************************************/
 .icono{
     height:5% ;
