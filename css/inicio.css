@@ -51,6 +51,8 @@ body{
 }
 .nav .navBtn:hover{
     background-color: var(--black-secondary);
+    transition: ease-in-out .3s;
+    
 }
 .nav .navBtn:hover:first-child{
     border-radius: 0 0 0 1rem;
@@ -60,17 +62,32 @@ body{
 }
 /** Nav dropdown list **/
 .nav .navBtn ul{
-    display: none;
+    /*Se agrego visibility y opacity para agregar el efecto de transicion */
+    visibility: hidden;
+    opacity: 0;
+    /*--------------------------------------------------------------------*/
+    
+    /* display: none; */
     position: absolute;
     width: max-content;
     background-color: var(--black-primary);
+    
+    
 }
 .nav > .navBtn:hover > ul{
     display: block;
+    
+    /*Efecto de transicion para el submenu */
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+    /*---------------------------------------- */
 }
 .nav > .navBtn li:hover{
     background-color: var(--black-secondary);
+    transition: ease-in .3s;
 } 
+
 /** End Nav dropdown list **/
 .navBtn a {
     color: var(--white);
