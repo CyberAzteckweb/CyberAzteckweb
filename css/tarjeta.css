@@ -1,12 +1,22 @@
-.container{
+/* .container{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-wrap: wrap;
     gap:100px 50px;
     padding: 100px 50px;
+} */
+
+.container{
+    display: flex;  
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+height: auto;
 }
+
+
 
 .container .card{
     position:relative;
@@ -26,6 +36,7 @@ box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 .container .card{
     height: 400px;
     cursor: pointer;
+    top: 31px;
 }
 
 .container .card .img-box{
@@ -81,16 +92,22 @@ box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
 .container .card .content a {
-    position: relative;
+   /* position: relative;
     top: 15px;
     display: inline-block;
     padding: 12px 25px;
     text-decoration: none;
-    background: var(--clr);
-    color: white;
+    background: var(--clr);*/
+    color: red;
     font-weight: 500;
+ 
 }
-
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;   
+}
 .container .card .content a:hover {
     opacity: 0.8;
 }
